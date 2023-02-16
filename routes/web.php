@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $products = config('comics');
+    $products = config('comics.fumetti');
     return view('index', compact('products'));
 });
 
