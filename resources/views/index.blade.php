@@ -8,9 +8,23 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    @foreach($products as $product)
-    <img src="{{$product['thumb']}}" alt="">
-    <h1 class="text-center">{{$product['title']}}</h1>
-    @endforeach
+    @include('partials.header')
+    <section>
+        <div class="album">
+            @foreach($products as $product)
+            <div class="album-card">
+                <div class="album-image">
+                    <img class="thumb" src="{{$product['thumb']}}" alt="">
+           
+                        <h4>{{$product['title']}}</h4>
+               
+                </div>
+
+            </div>
+                @endforeach
+        </div>
+    </section>
+    
+    @include('partials.footer')
 </body>
 </html>

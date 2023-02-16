@@ -17,3 +17,4 @@ Route::get('/', function () {
     $products = config('comics');
     return view('index', compact('products'));
 });
+
