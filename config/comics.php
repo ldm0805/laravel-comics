@@ -271,27 +271,27 @@ return [
         'icon'=> [
             [
 
-                "label" => 'buy-comics-digital-comics.png',
+                "img" => 'buy-comics-digital-comics.png',
                 "description" => 'DIGITAL COMICS'
             ],
             [
 
-                "label" => 'buy-comics-merchandise.png',
+                "img" => 'buy-comics-merchandise.png',
                 "description" => 'DC MERCHANDISE'
             ],
             [
 
-                "label" => 'buy-comics-subscriptions.png',
+                "img" => 'buy-comics-subscriptions.png',
                 "description" => 'SUBSCRIPTION'
             ],
             [
 
-                "label" => 'buy-comics-shop-locator.png',
+                "img" => 'buy-comics-shop-locator.png',
                 "description" => 'COMIC SHOP LOCATOR'
             ],
             [
 
-                "label" => 'buy-dc-power-visa.svg',
+                "img" => 'buy-dc-power-visa.svg',
                 "description" => 'DC POWER VISA'
             ],
         ],

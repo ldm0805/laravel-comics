@@ -15,7 +15,7 @@
                 @foreach($products as $product)
                 <div class="album-card">
                     <div class="album-image">
-                        <img class="thumb" src="{{$product['thumb']}}" alt="">
+                        <img class="thumb" src="{{$product['thumb']}}" alt="{{$product['title']}}">
                     </div>
                     <h5>{{$product['title']}}</h5>
                 </div>
@@ -25,6 +25,11 @@
                 <button class="button_load">Load more</button>
             </div>
         </section>
+    </div>
+    <div>
+        {{-- @foreach($productsicon as $product) --}}
+        {{-- <img src="{{$product['title']}}" alt=""> --}}
+        {{-- @endforeach --}}
     </div>
     
     @include('partials.footer')
