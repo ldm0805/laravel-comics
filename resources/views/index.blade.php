@@ -15,11 +15,8 @@
             <div class="album-card">
                 <div class="album-image">
                     <img class="thumb" src="{{$product['thumb']}}" alt="">
-           
-                        <h4>{{$product['title']}}</h4>
-               
                 </div>
-
+                <h5>{{$product['title']}}</h5>
             </div>
                 @endforeach
         </div>
