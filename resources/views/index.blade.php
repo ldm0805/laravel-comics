@@ -28,11 +28,6 @@
             </div>
         </section>
     </div>
-    <div>
-        {{-- @foreach($productsicon as $product) --}}
-        {{-- <img src="{{$product['title']}}" alt=""> --}}
-        {{-- @endforeach --}}
-    </div>
     
     @include('partials.footer')
 </body>

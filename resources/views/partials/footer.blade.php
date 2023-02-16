@@ -1,4 +1,17 @@
 <footer>
+    <div class="footer_cont">
+        <ul>
+            @foreach($productsicon as $product)
+            <li>
+                <a href="#">
+                    <img src="{{ asset(Vite::asset($product['img'])) }}" alt="">
+                </a>
+                <span class="description">{{$product['description']}}</span>
+            </li>
+                @endforeach
+        </ul>
+   </div>
+   
     <div class="cols cont_list">
         <div>
             <div class="footer-links">
@@ -64,11 +77,14 @@
         <div class="icon">
             <h3 class="follow">Follow us</h3>
             <ul>
-                {{-- @foreach($productsmenu as $product)
+                 @foreach($productsocial as $product)
                 <li>
-                    <a href="">{{$product['thumb']}}</a>
+
+                    <img src="{{ asset(Vite::asset($product['logo'])) }}" alt="">
                 </li>
-                @endforeach --}}
+                    
+                
+                @endforeach 
             </ul>
         </div>
     </div>
