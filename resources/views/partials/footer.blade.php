@@ -15,8 +15,8 @@
     <div class="cols cont_list">
         <div>
             <div class="footer-links">
-                <h4>Dc Comics</h4>
                 <ul>
+                    <li><h4>Dc Comics</h4></li>
                     <li><a href="#">Characters</a></li>
                     <li><a href="#">Comics</a></li>
                     <li><a href="#">Movies</a></li>
@@ -28,8 +28,8 @@
             </div>
             <!-- Link footer -->
             <div class="footer-links">
-                <h4>Shop</h4>
                 <ul>
+                    <li><h4>Shop</h4></li>
                     <li><a href="#">Shop DC</a></li>
                     <li><a href="#">Shop DC Collectibles</a></li>
                 </ul>
@@ -37,8 +37,8 @@
         </div>
         <!-- Link footer -->
         <div class="footer-links">
-            <h4>DC</h4>
             <ul>
+                <li><h4>DC</h4></li>
                 <li><a href="#">Temos Of Use</a></li>
                 <li><a href="#">Privacy policy (New)</a></li>
                 <li><a href="#">Ad Choices</a></li>
@@ -54,8 +54,8 @@
         </div>
 
         <div class="footer-links">
-            <h4>SITES</h4>
             <ul>
+                <li><h4>SITES</h4></li>
                 <li><a href="#">DC</a></li>
                 <li><a href="#">MAD Magazine</a></li>
                 <li><a href="#">DC Kids</a></li>
@@ -79,7 +79,6 @@
             <ul>
                  @foreach($productsocial as $product)
                 <li>
-
                     <img src="{{ asset(Vite::asset($product['logo'])) }}" alt="">
                 </li>
                     

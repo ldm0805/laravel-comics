@@ -23,11 +23,6 @@ footer {
             justify-content: space-between;
             align-items: center;
 
-
-            li a {
-                color: $gray;
-            }
-
             .description {
                 padding-left: 1em;
             }
@@ -52,6 +47,7 @@ footer {
 
 
     .cont_list {
+        // background-image: url('/img/footer-bg.jpg');
         background-image: url('/img/footer-bg.jpg');
         background-size: cover;
         display: flex;
@@ -80,7 +76,7 @@ footer {
         }
 
         li a {
-            color: $gray;
+            color: gray;
 
             &:hover {
                 color: white;
