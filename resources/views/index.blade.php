@@ -9,18 +9,23 @@
 </head>
 <body>
     @include('partials.header')
-    <section>
-        <div class="album">
-            @foreach($products as $product)
-            <div class="album-card">
-                <div class="album-image">
-                    <img class="thumb" src="{{$product['thumb']}}" alt="">
+    <div class="container-fluid bg_gray">
+        <section>
+            <div class="album">
+                @foreach($products as $product)
+                <div class="album-card">
+                    <div class="album-image">
+                        <img class="thumb" src="{{$product['thumb']}}" alt="">
+                    </div>
+                    <h5>{{$product['title']}}</h5>
                 </div>
-                <h5>{{$product['title']}}</h5>
-            </div>
                 @endforeach
-        </div>
-    </section>
+            </div>
+            <div class="text-center">
+                <button class="button_load">Load more</button>
+            </div>
+        </section>
+    </div>
     
     @include('partials.footer')
 </body>
