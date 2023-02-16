@@ -6,19 +6,20 @@
     <div>
     <nav class="nav_cont">
         <ul>
-            @foreach($productsmenu as $product)
+            @foreach($productsmenu as $menuitem)
             <li>
                 <a
-                class="{{Route::currentRouteName() == 'homepgage' ? 'active' : ''}}" 
-                 href="{{$product['url']}}">{{$product['label']}}</a>
+                class="{{Route::currentRouteName() == 'homepage' ? 'active' : ''}}" 
+                 href="{{$menuitem['url']}}">{{$menuitem['label']}}
+                </a>
             </li>
             @endforeach
         </ul>
     
     </nav>
     </div>
-    <div>
-        <nav>
+    <div class="search">
+        <nav class="input-cont">
             <input type="text" placeholder="Type something...">
           </nav>
     </div>

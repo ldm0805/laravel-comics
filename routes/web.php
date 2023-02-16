@@ -20,4 +20,4 @@ Route::get('/', function () {
     $productsocial = config('comics.social');
 
     return view('index', compact('products','productsmenu','productsicon','productsocial'));
-});
+})->name('homepage');

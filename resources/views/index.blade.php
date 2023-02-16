@@ -9,15 +9,17 @@
 </head>
 <body>
     @include('partials.header')
+    @include('partials.jumbotron')
+    
     <div class="container-fluid bg_gray">
         <section>
             <div class="album">
-                @foreach($products as $product)
+                @foreach($products as $albumcover)
                 <div class="album-card">
                     <div class="album-image">
-                        <img class="thumb" src="{{$product['thumb']}}" alt="{{$product['title']}}">
+                        <img class="thumb" src="{{$albumcover['thumb']}}" alt="{{$albumcover['title']}}">
                     </div>
-                    <h5>{{$product['title']}}</h5>
+                    <h5>{{$albumcover['title']}}</h5>
                 </div>
                 @endforeach
             </div>
