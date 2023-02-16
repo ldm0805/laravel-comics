@@ -3,6 +3,7 @@
 @import '~resources/scss/partials/_footer.scss';
 @import '~resources/scss/partials/_header.scss';
 @import '~resources/scss/partials/_mixins.scss';
+@import '~resources/scss/partials/_variables.scss';
 
 
 .container-fluid.bg_gray {
@@ -69,4 +70,8 @@
             @include upbold
         }
     }
+}
+
+ul {
+    list-style: none;
 }
