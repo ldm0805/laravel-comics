@@ -27,8 +27,7 @@ Route::get('/detail_card/{title}', function ($titolo) {
     $productsmenu = config('comics.menu');
     $productsicon = config('comics.icon');
     $productsocial = config('comics.social');
-    
-    dd($titolo);
+
     foreach($products as $product){
         if($product['title'] == $titolo){
             $single = $product;
