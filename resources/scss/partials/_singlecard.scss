@@ -2,17 +2,87 @@
 @import '~resources/scss/partials/_variables.scss';
 
 div.single-card {
+    padding-top: 3em;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
 
+    h4 {
+        text-transform: uppercase;
+    }
 
     div.position {
         width: 80%;
         margin: 0 auto;
-        position: relative;
 
-        img {
+        .view {
+            border: 3px solid white;
             position: absolute;
-            bottom: 100px;
-            left: 0px;
+            top: -350px;
+            left: 0;
+            background-color: #00a9d9;
+
+            div {
+                text-align: center;
+                @include upbold;
+                color: white;
+            }
+
+            .comic {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #00a9d9;
+            }
+
         }
+
+    }
+
+    .advertisement {
+        text-align: end;
+        @include upbold;
+        color: rgb(66, 66, 66);
+    }
+
+    .talentspecs {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            padding-bottom: .8em;
+        }
+
+
+        .h2,
+        p {
+            padding-bottom: .5em;
+            border-bottom: 1px solid rgb(66, 66, 66);
+        }
+    }
+}
+
+.green-cont {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    .avaible {
+        display: flex;
+        justify-content: space-between;
+        border-right: 1px solid rgb(66, 66, 66);
+
+        .upbold {
+            color: rgb(224, 224, 224);
+            @include upbold;
+        }
+    }
+
+    .avaible,
+    .check-avaible {
+        padding: .8em;
+        background-color: #55ba59;
+        border-bottom: 1px solid rgb(66, 66, 66);
+        // @include whitebold;
     }
 }

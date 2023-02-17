@@ -20,6 +20,11 @@
     justify-content: space-around;
 }
 
+@mixin whitebold {
+    color: white;
+    font-weight: bold;
+}
+
 @mixin button {
     background-color: #303030;
     border: 3px solid rgb(35, 56, 219);
