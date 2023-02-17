@@ -1,0 +1,18 @@
+@import '~resources/scss/partials/_mixins.scss';
+@import '~resources/scss/partials/_variables.scss';
+
+div.single-card {
+
+
+    div.position {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 100px;
+            left: 0px;
+        }
+    }
+}
