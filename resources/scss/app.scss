@@ -20,25 +20,27 @@
     background-color: #1c1c1c;
 
     section {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
 
         .album {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             position: relative;
-            padding: 4rem 0;
+            padding: 4rem 0em;
 
 
             .album-card {
-                width: calc((100% / 6) - 1rem);
+                width: calc(100% / 6 - 1.5em);
+                padding: 2em 1.5em;
                 text-align: center;
 
                 a {
+                    text-decoration: none;
 
                     h6 {
-                        padding: 1rem;
+                        padding-top: 1em;
                         color: white;
 
                     }

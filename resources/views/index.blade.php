@@ -4,11 +4,9 @@
         <section>
             <div class="album">
                 @foreach($products as $key => $albumcover)
-                    <a href="{{ route('single-card', ['id' => $key]) }}">
                         @include('/partials/detail_card')
-                    </a>
-                    @endforeach
-                </div>
+                @endforeach
+            </div>
             <div class="text-center">
                 <button class="button_load">Load more</button>
             </div>
