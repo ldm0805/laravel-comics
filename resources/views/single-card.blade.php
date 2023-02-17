@@ -35,21 +35,23 @@
             <img src="{{Vite::asset('resources/images/adv.jpg')}}" alt="">
         </div>
     </div>
+</div>
 
-        <div class="talentspecs">
-            <div class="talent col-5">
-                <h2>Talent</h2>
-                <p>Art by: <a href="#"> {{implode(', ', $single['artists'])}} </a></p>
-                <p>Written by: <a href="#"> {{implode(', ', $single['writers'])}} </a></p>
-            </div>
-            <div class="specs col-5">
-                <h2>Specs</h2>
-                <p>Series: {{$single['series']}}</p>
+<div class="talentspecscont">
+    <div class="talentspecs">
+        <div class="talent col-6">
+            <h2>Talent</h2>
+            <p>Art by: <a href="#"> {{implode(', ', $single['artists'])}} </a></p>
+            <p>Written by: <a href="#"> {{implode(', ', $single['writers'])}} </a></p>
+        </div>
+        <div class="specs col-4">
+            <h2>Specs</h2>
+            <p>Series: <a href="#">{{$single['series']}}</a></p>
                 <p>U.S. Price: {{$single['price']}}</p>
                 <p>On Sale Date: {{$single['sale_date']}}</p>
-
+                
             </div>
         </div>
     </div>
-
+        
 @endsection

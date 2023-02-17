@@ -14,4 +14,5 @@
             </div>
         </section>
     </div>
+        @include('partials.icon-cont')
     @endsection

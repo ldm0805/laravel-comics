@@ -4,3 +4,4 @@
             </div>
             <h6>{{$albumcover['title']}}</h6>
         </div>
+        

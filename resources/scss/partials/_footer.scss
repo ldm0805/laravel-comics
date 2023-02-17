@@ -1,45 +1,46 @@
 @import '~resources/scss/partials/_mixins.scss';
 @import '~resources/scss/partials/_variables.scss';
 
-footer {
-    .footer_cont {
-        padding: 2em 5em;
-        background-color: #0282f9;
-        width: 100%;
+.footer_cont {
+    padding: 2em 5em;
+    background-color: #0282f9;
+    width: 100%;
 
-        .contet_title {
-            color: white;
-            @include upbold;
-        }
-
-        .link-flex {
-            display: flex;
-            align-items: center;
-        }
-
-        ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .description {
-                padding-left: 1em;
-            }
-
-            img {
-                width: 60px;
-                height: 60px;
-                object-fit: contain;
-            }
-
-            span {
-                color: white;
-                font-size: 10px;
-            }
-        }
-
+    .contet_title {
+        color: white;
+        @include upbold;
     }
+
+    .link-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .description {
+            padding-left: 1em;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        span {
+            color: white;
+            font-size: 10px;
+        }
+    }
+
+}
+
+footer {
 
 
     .cont_list {
@@ -147,6 +148,5 @@ footer {
 
         }
     }
-
 
 }
