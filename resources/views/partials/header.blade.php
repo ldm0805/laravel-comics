@@ -21,7 +21,6 @@
         </li>
         @endforeach
     </ul>
-    
 </nav>
 </div>
 <div class="search">
