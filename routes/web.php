@@ -22,11 +22,17 @@ Route::get('/', function () {
     return view('index', compact('products','productsmenu','productsicon','productsocial'));
 })->name('homepage');
 
-Route::get('/detail_card', function () {
+Route::get('/detail_card/{title}', function ($titolo) {
     $products = config('comics.fumetti');
     $productsmenu = config('comics.menu');
     $productsicon = config('comics.icon');
     $productsocial = config('comics.social');
-
-    return view('detail_card', compact('products','productsmenu','productsicon','productsocial'));
+    
+    dd($titolo);
+    foreach($products as $product){
+        if($product['title'] == $titolo){
+            $single = $product;
+        }
+    }
+    return view('detail_card', compact('products','productsmenu','productsicon','productsocial','single'));
 })->name('detail_card');

@@ -5,12 +5,12 @@
             <div class="album">
                 @foreach($products as $albumcover)
                 <div class="album-card">
-                    {{-- <a href="{{ route('detail-product', ['param' => $product['titolo']]) }}"> --}}
+                    <a href="{{ route('detail_card', ['title' => $albumcover['title']]) }}">
                         <div class="album-image">
                             <img class="thumb" src="{{$albumcover['thumb']}}" alt="{{$albumcover['title']}}">
                         </div>
                         <h6>{{$albumcover['title']}}</h6>
-                    {{-- </a> --}}
+                    </a>
                     </div>
                     @endforeach
                 </div>
