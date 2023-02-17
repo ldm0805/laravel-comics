@@ -1,5 +1,6 @@
+{{-- Pagina 1 e 2 in comune --}}
 <footer>
-
+    {{-- Sezione con i link --}}
     <div class="cols cont_list">
         <div class="d-flex flex-column">
             <div class="d-flex flex-row">
@@ -65,14 +66,12 @@
                     </p>
                 </div>
         </div>
-        
-        
-    
         <div class="dc_bg">
             <div class="img_dc_bg">
             </div>
         </div>
     </div>
+    {{-- Zona social del footer --}}
     <div class="social">
         <div class="col-but">
             <button class="footer-button">Sign-up now!</button>
@@ -80,12 +79,10 @@
         <div class="icon">
             <h3 class="follow">Follow us</h3>
             <ul>
-                 @foreach($productsocial as $product)
-                <li>
-                    <img src="{{ asset(Vite::asset($product['logo'])) }}" alt="">
-                </li>
-                    
-                
+                @foreach($productsocial as $product)
+                    <li>
+                        <img src="{{ asset(Vite::asset($product['logo'])) }}" alt="">
+                    </li>
                 @endforeach 
             </ul>
         </div>

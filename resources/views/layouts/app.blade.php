@@ -8,11 +8,16 @@
     @vite('resources/js/app.js')
 </head>
 <body>
+    {{-- Includo l'header --}}
     @include('partials.header')
-    @include('partials.jumbotron')
 
+    {{-- Includo il jumbotron --}}
+    @include('partials.jumbotron')
+    
+    {{-- "Segnaposto" nella pagina per il contenuto  --}}
     @yield('content')
 
+    {{-- Includo il footer --}}
     @include('partials.footer')
 </body>
 </html>

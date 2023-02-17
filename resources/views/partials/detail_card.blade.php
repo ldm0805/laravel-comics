@@ -1,3 +1,5 @@
+{{-- Pagina 1 --}}
+{{-- Stampa card fumetti --}}
 <div class="album-card">
         <a href="{{ route('single-card', ['id' => $key]) }}">
             <div class="album-image">
