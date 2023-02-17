@@ -21,3 +21,12 @@ Route::get('/', function () {
 
     return view('index', compact('products','productsmenu','productsicon','productsocial'));
 })->name('homepage');
+
+Route::get('/detail_card', function () {
+    $products = config('comics.fumetti');
+    $productsmenu = config('comics.menu');
+    $productsicon = config('comics.icon');
+    $productsocial = config('comics.social');
+
+    return view('detail_card', compact('products','productsmenu','productsicon','productsocial'));
+})->name('detail_card');
