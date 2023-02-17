@@ -3,15 +3,10 @@
     <div class="container-fluid bg_gray">
         <section>
             <div class="album">
-                @foreach($products as $albumcover)
-                <div class="album-card">
-                    <a href="{{ route('detail_card', ['title' => $albumcover['title']]) }}">
-                        <div class="album-image">
-                            <img class="thumb" src="{{$albumcover['thumb']}}" alt="{{$albumcover['title']}}">
-                        </div>
-                        <h6>{{$albumcover['title']}}</h6>
+                @foreach($products as $key => $albumcover)
+                    <a href="{{ route('single-card', ['id' => $key]) }}">
+                        @include('/partials/detail_card')
                     </a>
-                    </div>
                     @endforeach
                 </div>
             <div class="text-center">

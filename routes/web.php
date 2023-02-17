@@ -22,16 +22,18 @@ Route::get('/', function () {
     return view('index', compact('products','productsmenu','productsicon','productsocial'));
 })->name('homepage');
 
-Route::get('/detail_card/{title}', function ($titolo) {
+Route::get('/single-card/{id}', function ($id) {
     $products = config('comics.fumetti');
     $productsmenu = config('comics.menu');
     $productsicon = config('comics.icon');
     $productsocial = config('comics.social');
-
-    foreach($products as $product){
-        if($product['title'] == $titolo){
-            $single = $product;
-        }
+    $single= '';
+    foreach($products as $key => $product){
+         
+            if($id == $key){
+                $single = $product;
+            }
     }
-    return view('detail_card', compact('products','productsmenu','productsicon','productsocial','single'));
-})->name('detail_card');
+    
+    return view('single-card', compact('products','productsmenu','productsicon','productsocial','single'));
+})->name('single-card');
