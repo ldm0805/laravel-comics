@@ -54,32 +54,32 @@
     </div>
 </div>
 
-<div class="image-cont d-flex">
+<div class="image-cont">
     <div class="col-3 flex-image">
-        <h5>
+        <h6>
             Digital comics
-        </h5>
+        </h6>
         <div class="icon phone-cont">
         </div>
     </div>
     <div class="col-3 flex-image">
-        <h5>
-            Digital comics
-        </h5>
+        <h6>
+            Shop Dc
+        </h6>
         <div class="icon tshirt-cont">
         </div>
     </div>
     <div class="col-3 flex-image">
-        <h5>
-            Digital comics
-        </h5>
+        <h6>
+            Comic Shop Locator
+        </h6>
         <div class="icon position-cont">
         </div>
     </div>
     <div class="col-3 flex-image">
-        <h5>
-            Digital comics
-        </h5>
+        <h6>
+            Subscriptions
+        </h6>
         <div class="icon card-cont">
         </div>
     </div>
