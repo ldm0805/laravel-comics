@@ -101,3 +101,46 @@ div.single-card {
         // @include whitebold;
     }
 }
+
+.image-cont {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+
+    .icon {
+        height: 37px;
+        width: 37px;
+        background-image: url('/resources/images/cta-icons.png');
+    }
+
+    .flex-image {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 0.5em 1.5em 0.5em;
+        border: 1px solid rgb(195, 195, 195);
+
+
+        h6 {
+            color: rgb(195, 195, 195);
+            text-transform: uppercase;
+        }
+
+        .phone-cont {
+            background-position: 0px 0px;
+        }
+
+        .tshirt-cont {
+            background-position: -37px 0px;
+        }
+
+        .position-cont {
+            background-position: -222px 0px;
+        }
+
+        .card-cont {
+            background-position: 38px -74px;
+        }
+    }
+}

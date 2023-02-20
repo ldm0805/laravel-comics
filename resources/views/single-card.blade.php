@@ -53,5 +53,37 @@
         </div>
     </div>
 </div>
+
+<div class="image-cont d-flex">
+    <div class="col-3 flex-image">
+        <h5>
+            Digital comics
+        </h5>
+        <div class="icon phone-cont">
+        </div>
+    </div>
+    <div class="col-3 flex-image">
+        <h5>
+            Digital comics
+        </h5>
+        <div class="icon tshirt-cont">
+        </div>
+    </div>
+    <div class="col-3 flex-image">
+        <h5>
+            Digital comics
+        </h5>
+        <div class="icon position-cont">
+        </div>
+    </div>
+    <div class="col-3 flex-image">
+        <h5>
+            Digital comics
+        </h5>
+        <div class="icon card-cont">
+        </div>
+    </div>
+
+</div>
         
 @endsection
