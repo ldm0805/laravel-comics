@@ -16,7 +16,6 @@
             <div>
                 <h4 class="upbold">{{$single['title']}}</h4>
             </div>
-
             <div class="green-cont">
                 <div class="avaible col-7">
                     <span class="upbold">U.S. Price: <span class="text-white">{{$single['price']}}</span></span>
@@ -50,7 +49,7 @@
             <h2>Specs</h2>
             <p>Series: <a href="#">{{$single['series']}}</a></p>
             <p>U.S. Price: {{$single['price']}}</p>
-            <p>On Sale Date: {{$single['sale_date']}}</p>    
+            <p>On Sale Date: {{ changeDate($single) }}</p>    
         </div>
     </div>
 </div>

@@ -3,7 +3,7 @@
     {{-- Prima parte DC visa --}}
     <div class="visa-cont">
         <div class="visa">
-            <p>Dc Power Visa</p>
+            <p>Dc Power Visa<i class="fa-solid fa-trademark"></i></p>
             <p>Additional Dc Sites<i class="fa-regular fa-registered ps-1"></i></p>
         </div>
     </div>
